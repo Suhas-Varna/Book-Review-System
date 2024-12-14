@@ -1,0 +1,168 @@
+/* HomePage.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3; /* Lighter background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.home-container {
+  width: 98%; /* Ensure the container takes up full width */
+  max-width: 100%;
+  padding: 0 30px; /* Add 20px padding on left and right */
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.hero-section {
+  text-align: center;
+  background-color: #fff9e6; /* Pale yellow */
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 97%;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #d44b15;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width of the screen */
+  margin: 20px 0;
+}
+
+.search-bar img {
+  width: 20px; /* Favicon size */
+  margin-right: 10px;
+}
+
+.search-input {
+  width: 80%; /* Make the search bar take up most of the screen */
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #d44b15;
+  border-radius: 0; /* Remove rounded corners */
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #bf3d0f;
+}
+
+
+
+.search-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #d44b15;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #bf3d0f;
+}
+
+.books-grid {
+  color: #fff9e6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 books in a row */
+  gap: 20px;
+  width: 100%; /* Full width */
+  padding: 0; /* No padding between books */
+  box-sizing: border-box;
+}
+
+.book-card {
+  color: black;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.book-authors {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.book-rating {
+  margin-top: 10px;
+  color: #ffa500;
+}
+
+.stars {
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row on medium screens */
+  }
+
+  .search-input {
+    width: 70%; /* Adjust search input width on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+  }
+
+  .search-input {
+    width: 90%; /* Adjust search input width on small screens */
+  }
+}
+.logout-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #d44b15; /* Similar to search button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.logout-btn:hover {
+  background-color: #bf3d0f;
+}
+

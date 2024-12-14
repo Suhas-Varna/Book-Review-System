@@ -1,0 +1,142 @@
+/* Apply the background image only for the login page */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/public/bookimage.jpg') no-repeat center center/cover;
+  background-size: cover;
+}
+
+/* Main box container for login form, placed in the center */
+.login-page .main {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.9); /* Light white background */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 2; /* Keeps it above the background */
+}
+
+/* Navbar (top ribbon) styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 5;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9); /* Light, white background */
+  backdrop-filter: blur(5px); /* Apply slight blur for the navbar */
+  z-index: 100; /* Keeps navbar above content */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better clarity */
+}
+
+.logo {
+  color: #ff6f61;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #ff6f61; /* Hover effect for links */
+}
+
+/* Content under the navbar (Welcome text) */
+.content {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  padding-top: 100px; /* Gives space below the navbar */
+}
+
+.content h1 span {
+  color: #ff6f61;
+}
+
+/* Styling for the login form */
+.form {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 60px; /* For keeping distance from the navbar */
+}
+
+.form h2 {
+  color: #ff6f61;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Styling the input fields in the form */
+.form input {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: 2px solid #ff6f61;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.form input:focus {
+  border-color: #ffa07a; /* Softened focus color */
+}
+
+/* Submit button styling */
+.btnn {
+  width: 98%;
+  padding: 14px;
+  background-color: #ff6f61;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btnn:hover {
+  background-color: #ffa07a; /* Lighter shade on hover */
+}
+
+/* Adjustments for responsive design */
+@media (max-width: 768px) {
+  .login-page .main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .btnn {
+    font-size: 14px;
+  }
+
+  .form input {
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .main {
+    width: 40%; /* Form box is narrower for larger screen/laptop */
+    padding: 40px 50px; /* Added padding for more space */
+  }
+}

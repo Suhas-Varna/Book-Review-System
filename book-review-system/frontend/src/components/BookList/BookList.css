@@ -1,0 +1,76 @@
+/* Basic container and title styling */
+.book-list-container {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading spinner */
+  .spinner {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff6f61;
+  }
+  
+  /* Table styling */
+  .book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .book-table th, .book-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .book-table th {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  /* Row hover effect */
+  .book-row:hover {
+    background-color: #f7f7f7;
+  }
+  
+  /* Thumbnail styling */
+  .thumbnail {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    .book-table {
+      font-size: 12px;
+    }
+  
+    .thumbnail {
+      width: 40px;
+      height: 60px;
+    }
+  }
+  
